@@ -26,6 +26,7 @@ const WerTextField = ({
           error={!!error}
           helperText={!!error && <WerHelperText error={error} />}
           fullWidth
+          data-testid={`WerTextField.${name}`}
           {...field}
         />
       )}
